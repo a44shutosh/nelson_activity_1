@@ -1,0 +1,73 @@
+html {
+    background: #ffffff;
+    --bms-primary: rgb(190, 43, 188);
+}
+
+body {
+    padding: 20px;
+    margin: 0;
+}
+
+.step {
+    display: none;
+}
+
+#step1 {
+    display: block;
+}
+
+.form-control {
+    font-size: 12px !important;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#title img {
+    object-fit: none;
+    margin-right: 1rem;
+}
+
+#addGroup {
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+#addGroup i {
+    font-size: 2.5em;
+}
+
+button.nav-link.dynamicgroup {
+    color: var(--bms-primary) !important;
+}
+
+button.nav-link.active {
+    background-color: var(--bms-primary) !important;
+    color: white !important;
+}
+
+#addGroup i::before{
+    color: var(--bms-primary);
+}
+
+button i.fa{
+    color: var(--bms-primary);
+}
+
+button#remove {
+    background-color: var(--bms-primary);
+}
+
+.logical-op-group {
+    border: 1px solid var(--bms-primary);
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+/*#group-tab-list{
+    height: 80vh;
+    overflow-x: scroll;
+}*/

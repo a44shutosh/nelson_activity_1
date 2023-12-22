@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type='text/css'/>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap-min.css">
+    <!-- <link rel="stylesheet" href="css/salesforce_style.css">-->
+
+    <!-- <script type="text/javascript" src="//code.jquery.com/git/jquery-git.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.js"></script>
+    <script type="text/javascript" src="js/lib/require.js"></script>
+    <script type="text/javascript" src="js/lib/fontawsome.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var config = {
+                baseUrl: 'js'
+            };
+
+            var dependencies = [
+                'customActivity'
+            ];
+
+            require(config, dependencies);
+        })();
+    </script>
+</head>
+<body>
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="d-flex align-items-start">
+                <div class="col-12" id="customDiv">
+                    <div class="divOne">
+                        <div id="title">
+                            <img src="images/icon-gear.png">
+                            <label>
+                                <h3>Dynamic Wait Activity</h3>
+                                <h6>Select the attributes you want wait on.</h6>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div id='group-tab-list' class="flex-column nav nav-pills group-tab-list" role="tablist">
+                                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                         aria-orientation="vertical">
+                                        <!-- <button class="nav-link dynamicgroup" id="v-pills-dynamic2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dynamic2" type="button" role="tab" aria-controls="v-pills-dynamic2" aria-selected="false">Dynamic Group2</button>
+                                        -->
+                                    </div>
+                                    <button class="nav-link " type="button" id="addGroup"><i
+                                            class="fa fa-plus fa-3x text-success"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="col-sm-3">
+            <button id="dynamicSetting" class="btn btn-danger btn-sm"><i class="fa fa-cog text-white   fa-fw"></i></button>
+        </div>-->
+    </div>
+</div>
+<div id="infoModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id='modalTitle' class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id='modalBody' class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/lib/timezones.full.js"></script>
+<script src="js/helper.js"></script>
+</html>
